@@ -643,7 +643,7 @@ pragma solidity ^0.6.12;
         address[] private _blackListedBots;
 
         uint256 private constant MAX = ~uint256(0);
-        uint256 private constant _tTotal = 250000 * 10**18;
+        uint256 private constant _tTotal = 300000 * 10**18;
         uint256 private _rTotal = (MAX - (MAX % _tTotal));
         uint256 private _tFeeTotal;
 
@@ -666,9 +666,9 @@ pragma solidity ^0.6.12;
         bool inSwap = false;
         bool public swapEnabled = true;
 
-        uint256 private _maxTxAmount = 1250 * 10**18;
+        uint256 private _maxTxAmount = 7000 * 10**18;
         uint256 private constant _numOfTokensToExchangeForTeam = 1.25 * 10**18;
-        uint256 private _maxWalletSize = 2375 * 10**18;
+        uint256 private _maxWalletSize = 300000 * 10**18;
 
         event botAddedToBlacklist(address account);
         event botRemovedFromBlacklist(address account);
